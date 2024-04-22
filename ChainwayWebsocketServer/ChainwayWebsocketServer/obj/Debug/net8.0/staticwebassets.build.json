@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8dlPWdSVWuLc5DcJmZ8OQy4fUKGxGxQ46bU4WqTQ1h4=",
+  "Source": "ChainwayWebsocketServer",
+  "BasePath": "_content/ChainwayWebsocketServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
