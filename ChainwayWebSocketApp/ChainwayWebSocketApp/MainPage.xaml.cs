@@ -9,30 +9,31 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-
-    private async void Button_Clicked(object sender, EventArgs e)
+    // function button to connect to server and change label text status if connected
+    private async void ConnectButton_Clicked(object sender, EventArgs e)
     {
         var client = new ClientWebSocket();
         await client.ConnectAsync(new Uri("ws://localhost:5000"), CancellationToken.None);
-        var buffer = new ArraySegment<byte>(Encoding.UTF8.GetBytes("Hello, WebSocket!"));
-        
-
-        while (client.State == WebSocketState.Open)
-        {
-            var result = new byte[1024];
-            var receiveBuffer = new ArraySegment<byte>(result);
-            var received = await client.ReceiveAsync(receiveBuffer, CancellationToken.None);
-            var receivedMessage = Encoding.UTF8.GetString(result, 0, received.Count);
-            messageLabel.Text = receivedMessage;
-        }
-
-        //await client.SendAsync(buffer, WebSocketMessageType.Text, true, CancellationToken.None);
-        //var result = new byte[1024];
-        //var receiveBuffer = new ArraySegment<byte>(result);
-        //var received = await client.ReceiveAsync(receiveBuffer, CancellationToken.None);
-        //var receivedMessage = Encoding.UTF8.GetString(result, 0, received.Count);
-        //await DisplayAlert("Received", receivedMessage, "OK");
-        //await client.CloseAsync(WebSocketCloseStatus.NormalClosure, "Done", CancellationToken.None);
-
+        statusConnection.Text = "Connected";
     }
+
+    // function to send message to server
+    private async void SendButton_Clicked(object sender, EventArgs e)
+    {
+        var client = new ClientWebSocket();
+        await client.ConnectAsync(new Uri("ws://localhost:5000"), CancellationToken.None);
+        var buffer = new ArraySegment<byte>(Encoding.UTF8.GetBytes(messageEntry.Text));
+        await client.SendAsync(buffer, WebSocketMessageType.Text, true, CancellationToken.None);
+        // await client.CloseAsync(WebSocketCloseStatus.NormalClosure, "Done", CancellationToken.None);
+    }
+
+    // function to disconnect from server
+    private async void DisconnectButton_Clicked(object sender, EventArgs e)
+    {
+        var client = new ClientWebSocket();
+        await client.ConnectAsync(new Uri("ws://localhost:5000"), CancellationToken.None);
+        await client.CloseAsync(WebSocketCloseStatus.NormalClosure, "Done", CancellationToken.None);
+        statusConnection.Text = "Disconnected";
+    }
+
 }

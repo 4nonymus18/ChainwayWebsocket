@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChainwayWebsocketServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eff583a77051149b170297948ee1ca8beb2c05d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChainwayWebsocketServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChainwayWebsocketServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
