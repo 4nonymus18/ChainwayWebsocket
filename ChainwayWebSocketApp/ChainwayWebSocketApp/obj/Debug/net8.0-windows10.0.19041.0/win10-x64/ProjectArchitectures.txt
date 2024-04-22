@@ -1,0 +1,1 @@
+C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\ChainwayWebSocketApp.csproj;x64
