@@ -20,28 +20,29 @@ public partial class MainPage : ContentPage
 
     private async void ConnectButton_Clicked(object sender, EventArgs e)
     {
-        // if connection is closed, connect to server
         statusConnection.Text = "Connecting....!";
-
-        // if connection is not yet open, connect to server
-
-        if (client.State != WebSocketState.Open)
+        try
         {
-            client = new ClientWebSocket(); // Create a new instance
-            await client.ConnectAsync(new Uri("ws://localhost:5000"), CancellationToken.None);
-            statusConnection.Text = "Connected";
-
-            while (client.State == WebSocketState.Open)
+            // if connection is closed, connect to server
+            if (client.State != WebSocketState.Open)
             {
-                var result = new byte[1024];
-                var receiveBuffer = new ArraySegment<byte>(result);
-                
-                var received = await client.ReceiveAsync(receiveBuffer, CancellationToken.None);
-                var receivedMessage = Encoding.UTF8.GetString(result, 0, received.Count);
+                client = new ClientWebSocket(); // Create a new instance
+                await client.ConnectAsync(new Uri("ws://localhost:5000"), CancellationToken.None);
+                statusConnection.Text = "Connected";
 
-                messageReceived.Text += $"[{DateTime.Now}] " + receivedMessage + Environment.NewLine;
+                while (client.State == WebSocketState.Open)
+                {
+                    var result = new byte[1024];
+                    var receiveBuffer = new ArraySegment<byte>(result);
+                    var received = await client.ReceiveAsync(receiveBuffer, CancellationToken.None);
+                    var receivedMessage = Encoding.UTF8.GetString(result, 0, received.Count);
+                    messageReceived.Text += $"[{DateTime.Now}] " + receivedMessage + Environment.NewLine;
+                }
+
             }
-
+        }
+        catch (Exception ex) {
+            Console.WriteLine(ex);
         }
     }
 
@@ -76,10 +77,11 @@ public partial class MainPage : ContentPage
         }
         catch (Exception ex)
         {
-            // Handle other exceptions
             Console.WriteLine("Exception: " + ex.Message);
         }
     }
+
+    // function clear text in GUI console
     private  void ClearButton_Clicked(object sender, EventArgs e)
     {
         messageReceived.Text = "";

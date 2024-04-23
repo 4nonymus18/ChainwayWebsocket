@@ -1,2 +1,6 @@
 13:04:03 - This is a log message.
 13:06:56 - This is a log message.
+13:29:15 - this is awesome
+13:41:12 - ping
+13:47:07 - hello world
+13:47:15 - faza was here

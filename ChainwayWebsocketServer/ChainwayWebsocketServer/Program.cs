@@ -50,6 +50,12 @@ public class ChatService
                 logger.Log(received_payload);
             }
 
+            // reply pong if received text ping
+            if (result.MessageType == WebSocketMessageType.Text && Encoding.UTF8.GetString(buffer, 0, result.Count) == "ping")
+            {
+                await socket.SendAsync(Encoding.UTF8.GetBytes("pong"), WebSocketMessageType.Text, true, default);
+            }
+
             foreach (var s in _sockets)
             {
                 await s.SendAsync(buffer[..result.Count], WebSocketMessageType.Text, true, default);
