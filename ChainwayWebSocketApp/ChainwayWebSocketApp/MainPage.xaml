@@ -16,6 +16,7 @@
         </Grid>
 
         <Label x:Name="statusConnection" Text="Status: Idle!" FontSize="Medium" Margin="0,10,0,10" />
+        <Label x:Name="SocketMessage" Text="Status: Idle!" FontSize="Medium" Margin="0,10,0,10" />
 
         <Button Text="Connect" Clicked="ConnectButton_Clicked" Margin="0,10,0,10" />
         <Button Text="Disconnect" Clicked="DisconnectButton_Clicked" Margin="0,10,0,10" />
@@ -30,7 +31,16 @@
             <Button Text="Send" Grid.Column="1" Clicked="SendButton_Clicked" />
         </Grid>
 
-        <Label x:Name="messageLabel" Text="Message Received: " FontSize="Medium" Margin="0,10,0,10" />
+
+            <Frame x:Name="messageFrame" Padding="10" HeightRequest="200" CornerRadius="5" BorderColor="Gray" HasShadow="True">
+                <ScrollView>
+                <Label x:Name="messageReceived"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="FillAndExpand" />
+                </ScrollView>
+            </Frame>
+
+        <Button Text="Clear" Grid.Column="2" BackgroundColor="IndianRed" Margin="0,10,0,0" Clicked="ClearButton_Clicked" HorizontalOptions="End" />
 
 
     </StackLayout>
