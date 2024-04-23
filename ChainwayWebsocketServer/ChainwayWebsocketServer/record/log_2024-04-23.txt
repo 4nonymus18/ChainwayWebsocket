@@ -1,0 +1,10 @@
+12:12:36 - This is a log message.
+12:13:34 - This is a log message.
+12:13:34 - This is a log message.
+12:13:34 - This is a log message.
+12:13:35 - This is a log message.
+12:13:35 - This is a log message.
+12:13:35 - This is a log message.
+12:13:35 - This is a log message.
+12:13:35 - This is a log message.
+12:13:35 - This is a log message.

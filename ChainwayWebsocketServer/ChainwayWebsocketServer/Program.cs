@@ -45,6 +45,9 @@ public class ChatService
             {
                 var received_payload = Encoding.UTF8.GetString(buffer, 0, result.Count);
                 Console.WriteLine(received_payload);
+
+                Logger logger = new Logger("logs");
+                logger.Log(received_payload);
             }
 
             foreach (var s in _sockets)

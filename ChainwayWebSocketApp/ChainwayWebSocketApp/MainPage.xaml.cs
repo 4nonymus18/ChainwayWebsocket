@@ -35,9 +35,11 @@ public partial class MainPage : ContentPage
             {
                 var result = new byte[1024];
                 var receiveBuffer = new ArraySegment<byte>(result);
+                
                 var received = await client.ReceiveAsync(receiveBuffer, CancellationToken.None);
                 var receivedMessage = Encoding.UTF8.GetString(result, 0, received.Count);
-                messageReceived.Text += receivedMessage + Environment.NewLine;
+
+                messageReceived.Text += $"[{DateTime.Now}] " + receivedMessage + Environment.NewLine;
             }
 
         }
