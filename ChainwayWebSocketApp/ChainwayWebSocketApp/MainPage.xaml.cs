@@ -1,89 +1,94 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Net;
 using System.Net.WebSockets;
-using System.Xml;
-namespace ChainwayWebSocketApp;
+using System.Text;
 
-public partial class MainPage : ContentPage
+namespace ChainwayWebSocketApp
 {
-
-    
-
-
-    private ClientWebSocket client;
-    public MainPage()
+    public partial class MainPage : ContentPage
     {
-        InitializeComponent();
-        client = new ClientWebSocket();
-    }
-
-    
-
-    private async void ConnectButton_Clicked(object sender, EventArgs e)
-    {
-        statusConnection.Text = "Connecting....!";
-        try
+        private readonly HttpListener _listener;
+        public MainPage()
         {
-            // if connection is closed, connect to server
-            if (client.State != WebSocketState.Open)
-            {
-                client = new ClientWebSocket(); // Create a new instance
-                await client.ConnectAsync(new Uri("ws://localhost:5000"), CancellationToken.None);
-                statusConnection.Text = "Connected";
+            InitializeComponent();
+            _listener = new HttpListener();
+            _listener.Prefixes.Add("http://localhost:5000/");
+            _listener.Start();
+            Task.Run(StartWebSocketServer);
+        }
 
-                while (client.State == WebSocketState.Open)
+        private async Task StartWebSocketServer()
+        {
+            // try catch block while listening for incoming requests
+
+            ipAddressEntry.Text = "localhost";
+            portEntry.Text = "5000";
+
+            try
+            {
+                while (true)
                 {
-                    var result = new byte[1024];
-                    var receiveBuffer = new ArraySegment<byte>(result);
-                    var received = await client.ReceiveAsync(receiveBuffer, CancellationToken.None);
-                    var receivedMessage = Encoding.UTF8.GetString(result, 0, received.Count);
-                    messageReceived.Text += $"[{DateTime.Now}] " + receivedMessage + Environment.NewLine;
+                    var context = await _listener.GetContextAsync();
+                    if (context.Request.IsWebSocketRequest)
+                    {
+                        var webSocketContext = await context.AcceptWebSocketAsync(null);
+                        var socket = webSocketContext.WebSocket;
+                        await HandleWebSocketConnection(socket);
+                    }
+                    else
+                    {
+                        context.Response.StatusCode = 400;
+                        context.Response.Close();
+                    }
                 }
-
             }
-        }
-        catch (Exception ex) {
-            Console.WriteLine(ex);
-        }
-    }
-
-    // function to send message to server
-    private async void SendButton_Clicked(object sender, EventArgs e)
-    {
-        try
-        {
-            var message = Encoding.UTF8.GetBytes(messageEntry.Text);
-            await client.SendAsync(new ArraySegment<byte>(message), WebSocketMessageType.Text, true, CancellationToken.None);
-        }
-        catch(Exception ex)
-        {
-            await DisplayAlert("Error!", ex.Message, "OK");
-        }
-    }
-
-    // function to disconnect from server
-    private async void DisconnectButton_Clicked(object sender, EventArgs e)
-    {
-        try
-        {
-            if (client != null && client.State == WebSocketState.Open)
+            catch (Exception ex)
             {
-                await client.CloseAsync(WebSocketCloseStatus.NormalClosure, "Done", CancellationToken.None);
-                statusConnection.Text = "Disconnected";
+                Debug.WriteLine("ERROR WOI");
+                Debug.WriteLine(ex.Message);
+            }
+
+        }
+
+        private async Task HandleWebSocketConnection(WebSocket socket)
+        {
+            var buffer = new byte[1024];
+            while (socket.State == WebSocketState.Open)
+            {
+                try
+                {
+                    var result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+                    if (result.MessageType == WebSocketMessageType.Close)
+                    {
+                        await socket.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None);
+                        break;
+                    }
+                    else if (result.MessageType == WebSocketMessageType.Text)
+                    {
+                        var message = Encoding.UTF8.GetString(buffer, 0, result.Count).TrimEnd('\0'); 
+                        Debug.WriteLine($"Received message: {message}");
+                        UpdateUI(message);
+
+                        // foward message to client
+                        var response = Encoding.UTF8.GetBytes(message);
+                        await socket.SendAsync(new ArraySegment<byte>(response, 0, response.Length), WebSocketMessageType.Text, true, CancellationToken.None);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Error handling WebSocket message: " + ex.Message);
+                    break; // Break out of the loop on error
+                }
             }
         }
-        catch (WebSocketException ex)
-        {
-            await DisplayAlert("WebSocketException!", ex.Message, "OK");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Exception: " + ex.Message);
-        }
-    }
 
-    // function clear text in GUI console
-    private  void ClearButton_Clicked(object sender, EventArgs e)
-    {
-        messageReceived.Text = "";
+        // function update UI
+        private void UpdateUI(string message)
+        {
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                messageLabel.Text += message+Environment.NewLine;
+            });
+        }
     }
 }

@@ -5,43 +5,25 @@
 
     <StackLayout Padding="20">
 
-        <Grid>
+        <Label Text="Server Config" Margin="10,0,0,0" />
+        <!--// grid layout 1 rows 3 col: 1st row for input ip address, 2nd row for input port, 3rd row for connect button-->
+        <Grid RowDefinitions="Auto, Auto, Auto">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            
-            <Label Text="Server IP: Localhost" Grid.Column="0" VerticalOptions="Center" />
-            <Label Text="Server Port: 5555" Grid.Column="1" VerticalOptions="Center" />
-        </Grid>
-
-        <Label x:Name="statusConnection" Text="Status: Idle!" FontSize="Medium" Margin="0,10,0,10" />
-
-        <Button x:Name="BtnConnect" Text="Connect" Clicked="ConnectButton_Clicked" Margin="0,10,0,10" />
-        <Button Text="Disconnect" Clicked="DisconnectButton_Clicked" Margin="0,10,0,10" />
-
-
-        <Grid Margin="0,10,0,10">
-            <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="100" />
             </Grid.ColumnDefinitions>
-            <Entry x:Name="messageEntry" Grid.Column="0" Placeholder="Enter message to send to server" />
-            <Button Text="Send" Grid.Column="1" Clicked="SendButton_Clicked" />
+
+            <Entry Grid.Row="0" Grid.Column="0" Margin="10" x:Name="ipAddressEntry" Placeholder="Enter IP Address" />
+            <Entry Grid.Row="0" Grid.Column="1" Margin="10" x:Name="portEntry" Placeholder="Enter Port" />
+            <Button Grid.Row="0" Grid.Column="2" Margin="10" Grid.ColumnSpan="3" Text="Save Config"/>
         </Grid>
 
-
-            <Frame x:Name="messageFrame" Padding="10" HeightRequest="200" CornerRadius="5" BorderColor="Gray" HasShadow="True">
-                <ScrollView>
-                <Label x:Name="messageReceived"
-                    VerticalOptions="StartAndExpand"
-                    HorizontalOptions="FillAndExpand" />
-                </ScrollView>
-            </Frame>
-
-        <Button Text="Clear" Grid.Column="2" BackgroundColor="IndianRed" Margin="0,10,0,0" Clicked="ClearButton_Clicked" HorizontalOptions="End" />
-
-
+        <Frame CornerRadius="10" BorderColor="Gray" Padding="10" Margin="10" HeightRequest="200">
+            <ScrollView>
+                <Label x:Name="messageLabel" />
+            </ScrollView>
+        </Frame>
+        
     </StackLayout>
-
 </ContentPage>

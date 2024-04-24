@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-23T06:46:12.049</Modified>
+      <Modified>2024-04-24T06:51:49.079</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-23T10:33:00.481</Modified>
+      <Modified>2024-04-24T06:51:48.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ChainwayWebSocketApp.runtimeconfig.json">
       <PackagePath>ChainwayWebSocketApp.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ChainwayWebSocketApp.dll">
       <PackagePath>ChainwayWebSocketApp.dll</PackagePath>
-      <Modified>2024-04-23T06:46:11.177</Modified>
+      <Modified>2024-04-24T06:51:48.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ChainwayWebSocketApp.exe</PackagePath>
-      <Modified>2024-04-23T10:32:59.989</Modified>
+      <Modified>2024-04-24T06:51:48.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Desktop\ChainwayWebsocket\ChainwayWebSocketApp\ChainwayWebSocketApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ChainwayWebSocketApp.deps.json">
       <PackagePath>ChainwayWebSocketApp.deps.json</PackagePath>
-      <Modified>2024-04-22T15:14:10.503</Modified>
+      <Modified>2024-04-24T02:51:53.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
