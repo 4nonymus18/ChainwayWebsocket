@@ -4,6 +4,6 @@
     "\\ChainwayWebsocketServer",
     "\\ChainwayWebsocketServer\\Properties"
   ],
-  "SelectedNode": "\\ChainwayWebsocketServer\\appsettings.json",
+  "SelectedNode": "\\ChainwayWebsocketServer\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
