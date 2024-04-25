@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ChainwayWebsocketServer"
+    "\\ChainwayWebsocketServer",
+    "\\ChainwayWebsocketServer\\Properties"
   ],
-  "SelectedNode": "\\ChainwayWebsocketServer.sln",
+  "SelectedNode": "\\ChainwayWebsocketServer\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

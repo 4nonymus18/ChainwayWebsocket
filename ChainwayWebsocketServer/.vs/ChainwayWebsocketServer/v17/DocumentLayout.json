@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55E735B2-5B89-4490-A85C-B0DF75BB6019}|ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj|c:\\users\\administrator\\desktop\\chainwaywebsocket\\chainwaywebsocketserver\\chainwaywebsocketserver\\logfiles.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{55E735B2-5B89-4490-A85C-B0DF75BB6019}|ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj|solutionrelative:chainwaywebsocketserver\\logfiles.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChainwayWebsocketServer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55E735B2-5B89-4490-A85C-B0DF75BB6019}|ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj|c:\\users\\administrator\\desktop\\chainwaywebsocket\\chainwaywebsocketserver\\chainwaywebsocketserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55E735B2-5B89-4490-A85C-B0DF75BB6019}|ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj|solutionrelative:chainwaywebsocketserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChainwayWebsocketServer\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChainwayWebsocketServer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\LogFiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChainwayWebsocketServer\\LogFiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\logs\\log_2024-04-24.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChainwayWebsocketServer\\logs\\log_2024-04-24.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +38,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LogFiles.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\LogFiles.cs",
-              "RelativeDocumentMoniker": "ChainwayWebsocketServer\\LogFiles.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\LogFiles.cs",
-              "RelativeToolTip": "ChainwayWebsocketServer\\LogFiles.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAADwvzUAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T05:05:11.522Z",
+              "DocumentIndex": 4,
+              "Title": "ChainwayWebsocketServer.csproj.user",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj.user",
+              "RelativeDocumentMoniker": "ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj.user",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj.user",
+              "RelativeToolTip": "ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-04-24T04:26:41.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChainwayWebsocketServer.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj",
+              "RelativeDocumentMoniker": "ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj",
+              "RelativeToolTip": "ChainwayWebsocketServer\\ChainwayWebsocketServer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-24T04:26:34.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\appsettings.json",
+              "RelativeDocumentMoniker": "ChainwayWebsocketServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\appsettings.json",
+              "RelativeToolTip": "ChainwayWebsocketServer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-24T04:15:40.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ChainwayWebsocketServer\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ChainwayWebsocketServer\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-24T02:34:40.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogFiles.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\LogFiles.cs",
+              "RelativeDocumentMoniker": "ChainwayWebsocketServer\\LogFiles.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\LogFiles.cs",
+              "RelativeToolTip": "ChainwayWebsocketServer\\LogFiles.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T01:26:14.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\Program.cs",
               "RelativeDocumentMoniker": "ChainwayWebsocketServer\\Program.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\Program.cs",
               "RelativeToolTip": "ChainwayWebsocketServer\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBIAAAAFAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwCgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T14:15:43.679Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "log_2024-04-24.txt",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\logs\\log_2024-04-24.txt",
+              "RelativeDocumentMoniker": "ChainwayWebsocketServer\\logs\\log_2024-04-24.txt",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebsocketServer\\ChainwayWebsocketServer\\logs\\log_2024-04-24.txt",
+              "RelativeToolTip": "ChainwayWebsocketServer\\logs\\log_2024-04-24.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-24T01:31:06.747Z"
             }
           ]
         }

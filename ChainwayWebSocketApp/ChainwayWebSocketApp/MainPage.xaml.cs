@@ -15,6 +15,8 @@ namespace ChainwayWebSocketApp
             _listener.Prefixes.Add("http://localhost:5000/");
             _listener.Start();
             Task.Run(StartWebSocketServer);
+
+            Debug.WriteLine("Server started");
         }
 
         private async Task StartWebSocketServer()
@@ -53,6 +55,10 @@ namespace ChainwayWebSocketApp
         private async Task HandleWebSocketConnection(WebSocket socket)
         {
             var buffer = new byte[1024];
+
+            var TxtWelcome = Encoding.UTF8.GetBytes("Welcome!");
+            await socket.SendAsync(new ArraySegment<byte>(TxtWelcome), WebSocketMessageType.Text, true, CancellationToken.None);
+
             while (socket.State == WebSocketState.Open)
             {
                 try

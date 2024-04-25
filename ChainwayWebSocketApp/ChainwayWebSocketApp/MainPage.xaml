@@ -7,6 +7,34 @@
 
         <Label Text="Server Config" Margin="10,0,0,0" />
         <!--// grid layout 1 rows 3 col: 1st row for input ip address, 2nd row for input port, 3rd row for connect button-->
+
+        <Grid RowDefinitions="Auto, Auto, Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+            <StackLayout Grid.Row="0" Grid.Column="0">
+                <Button Grid.Row="1" Grid.Column="0" Margin="10" Text="Connect RFID"/>
+                <Button Grid.Row="0" Grid.Column="0" Margin="10" Text="Scan RFID UHF"/>
+                <Button Grid.Row="0" Grid.Column="0" Margin="10" Text="Enable GPIO"/>
+                <Button Grid.Row="0" Grid.Column="0" Margin="10" Text="Disable GPIO"/>
+                <Button Grid.Row="0" Grid.Column="0" Margin="10" Text="Connect"/>
+                <Button Grid.Row="0" Grid.Column="0" Margin="10" Text="Web Socket Config"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="1">
+                <Frame CornerRadius="10" BorderColor="Gray" Padding="10" Margin="10" HeightRequest="400">
+                    <ScrollView>
+                        <Label x:Name="messageLabel" Text=". . . ." />
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+
+        </Grid>
+
+
         <Grid RowDefinitions="Auto, Auto, Auto">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -18,12 +46,11 @@
             <Entry Grid.Row="0" Grid.Column="1" Margin="10" x:Name="portEntry" Placeholder="Enter Port" />
             <Button Grid.Row="0" Grid.Column="2" Margin="10" Grid.ColumnSpan="3" Text="Save Config"/>
         </Grid>
+        
 
-        <Frame CornerRadius="10" BorderColor="Gray" Padding="10" Margin="10" HeightRequest="200">
-            <ScrollView>
-                <Label x:Name="messageLabel" />
-            </ScrollView>
-        </Frame>
+
+        <Label Margin="10,10,0,0" Text="List Tag:"/>
+
         
     </StackLayout>
 </ContentPage>
