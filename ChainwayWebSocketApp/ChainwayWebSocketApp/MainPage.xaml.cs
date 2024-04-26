@@ -2,6 +2,8 @@
 using System.Net;
 using System.Net.WebSockets;
 using System.Text;
+using ChainwayWebSocketApp.interfaces;
+using ChainwayWebSocketApp.Interfaces;
 
 namespace ChainwayWebSocketApp
 {
@@ -16,7 +18,13 @@ namespace ChainwayWebSocketApp
             _listener.Start();
             Task.Run(StartWebSocketServer);
 
+            //UHFAPI _UHF = new UHFAPI();
+            //Debug.WriteLine(_UHF.GetAPIVersion());
+
             Debug.WriteLine("Server started");
+
+
+
         }
 
         private async Task StartWebSocketServer()

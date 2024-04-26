@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2RWKnJ2MpuONu/ESZ0wnpvaEUTzknLepEL20+dLH0RxxHn20MjjpXvgXj5+l4gvw2ljlAJEAM2fWqdSm+XzTRA==",
+  "dgSpecHash": "D7Ky/i4RmpqmWCIdavKp1DEmG7gk/EHiPtq689Vb7dZhoa0wg7oao7Gw7WJH8xpyQy3r+SHIomrYuPb3A1N6FQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\ChainwayWebsocket\\ChainwayWebSocketApp\\ChainwayWebSocketApp\\ChainwayWebSocketApp.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsappsdk\\1.3.230724000\\microsoft.windowsappsdk.1.3.230724000.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.15.1.2\\xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",
