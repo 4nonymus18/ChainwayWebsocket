@@ -41,3 +41,13 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
+**/packages/*
+!**/packages/repositories.config
+
+**/packages/
+*.NET/packages/
+
+
+SanboxAppServer/packages/*
+SanboxAppServer/packages/
